@@ -31,7 +31,7 @@ body {
 /*detaise code */
 .details-button-container {
     position:absolute; /* Keeps the button in a fixed position */
-    bottom: 200px; /* Distance from the bottom */
+    bottom: 100px; /* Distance from the bottom */
     right: 20px; /* Distance from the right */
     z-index: 10; /* Ensures the button is above the video */
 }
@@ -497,6 +497,20 @@ color: rgb(0, 0, 0);
                     height: 13cm; /* Maintain image aspect ratio */
                     margin-bottom: 1cm;
                   }
+                  .email {
+                    font-size: 12px;
+                }
+                .social-icons a img {
+                    width: 20px; /* Adjust icon size */
+                    height: 20px;
+                    transition: transform 0.3s ease;
+                }
+                footer{
+                    padding: 10px 5px;
+                }
+                .footer-container p{
+                    font-size: 12px;
+                }
             
 }
 
