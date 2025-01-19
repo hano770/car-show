@@ -31,7 +31,7 @@ body {
 /*detaise code */
 .details-button-container {
     position:absolute; /* Keeps the button in a fixed position */
-    bottom: 20px; /* Distance from the bottom */
+    bottom: 150px; /* Distance from the bottom */
     right: 20px; /* Distance from the right */
     z-index: 10; /* Ensures the button is above the video */
 }
@@ -46,6 +46,9 @@ body {
     color:rgb(226, 226, 226);
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+    
+
+
 }
 
 .details-button:hover {
