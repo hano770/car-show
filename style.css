@@ -1,0 +1,499 @@
+/*Large devices (desktops, less than 1200px)*/
+ 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:rgb(226, 226, 226);
+}
+
+/* Video background container */
+.video-background-container {
+    position:relative;
+    width: 100%;
+    height: 600px; /* Control the height of the video container */
+    overflow: hidden;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Ensure the video stays behind other elements */
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container without distortion */
+}
+/*detaise code */
+.details-button-container {
+    position:absolute; /* Keeps the button in a fixed position */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    z-index: 10; /* Ensures the button is above the video */
+}
+
+.details-button {
+    text-decoration: none;
+    text-align: right;
+    font-style: italic;
+    padding: 10px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(226, 226, 226);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.details-button:hover {
+    
+    color: #ccc; /* Subtle hover effect */
+
+}
+
+/* Navbar styles */
+nav {
+    position:absolute; /* Make the navbar fixed at the top */
+    top: 0; /* Position it at the very top of the page */
+    width: 100%; /* Full width across the viewport */
+    height: 70px; /* Navbar height */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between brand and links */
+    align-items: center; /* Vertically center content */
+    padding: 1 20px; /* Horizontal padding */
+    color:rgb(226, 226, 226); /* White text color */
+    z-index: 999; /* Ensure it's on top of all other elements */
+    font-weight: bold;
+    font-style: italic;
+}
+
+.navbar-brand {
+    text-decoration: none;
+    color:rgb(226, 226, 226); /* Ensure it stays visible */
+    font-size: 25px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff; /* Ensure links are visible */
+    font-size: 18px;
+}
+
+ul li a:hover {
+    color: #ccc; /* Subtle hover effect */
+}
+
+
+
+
+/* Section styles */
+section {
+    text-align: center;
+    padding: 60px 20px;
+    
+    /*border-top: 1px solid #ccc;*/
+}
+#services, #contact {
+    margin: 0 auto;
+    padding-top: 30px; /* Add spacing at the top of sections */
+}
+/*brands car */
+
+.container {
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 0 20px; /* Padding for inner spacing */
+    max-width: 1200px; /* Ensure a consistent width */
+}
+
+#services {
+    margin-top: 20px; /* Adjust spacing between video and brands */
+    padding-top: 20px; /* Add internal spacing to create separation */
+}
+
+#services h {
+position: relative;
+display: inline-block;
+margin-bottom: 3px; /* Space below the heading */
+padding-bottom: 10px; /* Space above the line */
+font-weight: bold;
+font-style: italic;
+font-size: xx-large;
+}
+
+
+.brand-grid {
+margin-top: 0; /* Ensure no extra spacing */
+display: grid;
+grid-template-columns: repeat(4, minmax(80px, 0.3fr));
+gap: 70px;
+}
+
+.brand-item {
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+background: #fff;
+border: 1px solid #ddd;
+border-radius: 5px;
+padding: 5px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.brand-item:hover {
+transform: translateY(-5px);
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.brand-logo {
+width: 130px;
+height: 60px;
+margin-bottom: 5px;
+}
+
+.brand-name {
+font-size: 16px;
+font-weight: bold;
+text-align: center;
+color:black;
+}
+
+.brand-item:active {
+transform: translateY(0);
+}
+.more-container {
+text-align: right; /* Align the "More" link to the right */
+margin-top: 20px; /* Space above the link */
+}
+
+.more-link {
+display: inline-block;
+text-decoration: none;
+font-size: 20px;
+font-weight: bold;
+color: #000000; /* Link color */
+padding: 5px 15px;
+border: 1px solid grey; /* Add a border */
+border-radius: 5px; /* Rounded corners */
+transition: background-color 0.3s, color 0.3s; /* Smooth hover effect */
+}
+
+.more-link:hover {
+background-color:white; /* Highlight on hover */
+color: rgb(0, 0, 0);
+}
+/*navbar more */
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px ;
+    background-color:black;
+    border-bottom: 1px solid black;
+    
+  }
+   /* Page Title */
+   
+  .logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:rgb(226, 226, 226);
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 28px;
+    font-style: italic;
+    color:black;
+    font-weight: bold;
+
+  }
+  .home{
+    text-decoration: none;
+    color:rgb(226, 226, 226);
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+
+/*shapes*/
+   }
+   #contact h {
+    position: relative;
+    display: inline-block;
+    margin-top: 0px; /* Space below the heading */
+    padding-bottom: 10px; /* Space above the line */
+    font-weight: bold;
+    font-style: italic;
+    font-size: xx-large;
+    }
+  
+    #services, #contact {
+        margin: 0 auto; /* Center align the sections */
+        padding: 20px 0;
+    }
+    #contact .shapes ul {
+        list-style: none; /* Remove bullets from the list */
+        padding: 0; /* Remove default padding */
+        display: flex; /* Use flexbox to align items horizontally */
+        justify-content: center; /* Center the list items */
+        gap: 200px; /* Add space between items */
+        margin: 20px;
+        grid-template-columns: repeat(3, 1fr); /* Create 3 columns of equal width */
+      }
+      
+      #contact .shapes ul li {
+        display: flex; /* Use flexbox for centering */
+        justify-content: center; /* Center the image horizontally */
+        align-items: center; /* Center the image vertically */
+        width: 150px; /* Set a fixed width for each item */
+        height: 100px; /* Set a fixed height for each item */
+        
+      }
+      
+      #contact .shapes ul li img {
+        width: 350px; /* Set a fixed width for all images */
+        height: 300px; /* Set a fixed height for all images */
+        object-fit: contain; /* Preserve aspect ratio and prevent stretching */
+        filter: invert(1);
+        border: none;
+        
+      }
+      .shapes ul li img:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0);
+ 
+    }
+    
+
+      /*fooder*/
+      footer {
+        background-color:black; /* Dark background */
+        color:rgb(266,266,266); /* White text */
+        padding: 20px 10px; /* Padding for spacing */
+        font-family: Arial, sans-serif;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-between; /* Align email to the left and icons to the right */
+        align-items:end; /* Center the content vertically */
+        max-width: 1200px;
+        margin: 0 auto; /* Center the footer content horizontally */
+        
+    }
+    
+    .email {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: left;
+        color:rgb(226, 226, 226);
+
+        
+    }
+    
+    .email a {
+        color:rgb(226, 226, 226); /* Light blue links */
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+    }
+    
+    .email a:hover {
+        color:white; /* White color on hover */
+    }
+    
+    .social-icons {
+        display: flex; /* Align icons in a row */
+        gap: 20px; /* Add spacing between icons */
+    }
+    
+    .social-icons a img {
+        width: 30px; /* Adjust icon size */
+        height: 30px;
+        transition: transform 0.3s ease;
+    }
+    
+    footer .social-icons a img:hover {
+        transform: scale(1.2); /* Slightly enlarge icons on hover */
+    }
+    /*scrolling picure*/
+    
+    
+    .image-carousel {
+        width: 100%;
+        max-height: 5cm; /* Use viewport height for flexibility */
+        position: relative;
+        
+      }
+      
+      .carousel-track {
+        display: flex; /* Set images to appear in a row */
+        transition: transform 1s ease-in-out; /* Smooth scrolling effect */
+      }
+      
+      .carousel-image {
+        min-width: 100%; /* Ensure each image takes up full carousel width */
+        height: 15cm; /* Maintain image aspect ratio */
+      }
+      /* <......>*/
+
+      .carousel-btn {
+        position: absolute;
+        top: 7cm;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 18px;
+        z-index: 10;
+      }
+      
+      .left-btn {
+        left: 10px;
+      }
+      
+      .right-btn {
+        right: 10px;
+      }
+      
+      .carousel-btn:hover {
+        background-color: rgba(255, 255, 255, 0.7);
+        color: black;
+      }
+      /* Description Section */
+.description-container {
+    margin: 10cm auto; /* Adds space between the carousel and description */
+    max-width: 90%;
+    padding: 1px;
+    background-color:rgb(226, 226, 226); /* Light gray background */
+    border-radius: 2%; /* Optional: Adds rounded corners */
+    font-family: Arial, sans-serif; /* Sets a clean font */
+    line-height: 1.6; /* Improves readability */
+}
+
+.description-container h1 {
+    text-align: center; /* Centers the title */
+    font-size: 28px;    /* Adjusts title size */
+    color:black;        /* Dark text */
+}
+
+.description-container p {
+    text-align: justify; /* Justifies paragraph text */
+   font-size: 18px;
+    color:rgb(48, 48, 48);         /* Gray text color */
+}
+/*--------section 2 ----------*/
+#imagee{
+    min-width: 100%; /* Ensure each image takes up full carousel width */
+    height: 13cm;  /* Use viewport height for flexibility */
+    border: 1px solid black;
+}
+
+/*size*/
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    #contact .shapes ul {
+        display: grid;
+        grid-template-columns: repeat(3 ,0.1fr);
+        gap:100px;
+        justify-content: center; /* Center the list items */
+        
+    }
+    #contact .shapes ul li img {
+        width: 250px; /* Set a fixed width for all images */
+        height: 200px; /* Set a fixed height for all images */
+        
+
+ }
+ 
+}
+/* small devices(mobiles)*/
+      
+@media (max-width: 575.98px) { 
+    .brand-grid{
+        grid-template-columns: repeat(2, minmax(60px, 1fr));
+        gap:40px;
+        max-width: 20cm;
+        align-items: center;
+    }
+    .brand-logo {
+        width: 80px;
+        height: 60px;
+        margin-bottom: 5px;
+        }
+        
+        .brand-name {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        color:black;
+        }
+        .brand-item {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            }
+            #contact .shapes ul {
+                display: grid;
+                grid-template-columns: repeat(1 ,1fr);
+                gap:50px;
+                justify-content: center; /* Center the list items */
+                padding: 10px 70px;
+            }
+                .description-container h1 {
+                    text-align: center; /* Centers the title */
+                    font-size: 24px;    /* Adjusts title size */
+                    
+                }
+                
+                .description-container p {
+                    text-align: justify; /* Justifies paragraph text */
+                   font-size: 14px;
+                }
+                /*--------section 2 ----------*/
+                #imagee{
+                    min-width:430px; /* Ensure each image takes up full carousel width */
+                    height: 200px;  /* Use viewport height for flexibility */
+                    border: 1px solid black;
+                }
+                .carousel-image {
+                    min-width: 100%; /* Ensure each image takes up full carousel width */
+                    height: 13cm; /* Maintain image aspect ratio */
+                    margin-bottom: 1cm;
+                  }
+            
+}
+
