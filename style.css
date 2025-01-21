@@ -31,8 +31,8 @@ body {
 /*detaise code */
 .details-button-container {
     position:absolute; /* Keeps the button in a fixed position */
-    bottom: 100px; /* Distance from the bottom */
-    right: 20px; /* Distance from the right */
+    bottom: 80px; /* Distance from the bottom */
+    right: 10px; /* Distance from the right */
     z-index: 10; /* Ensures the button is above the video */
 }
 
@@ -40,7 +40,7 @@ body {
     text-decoration: none;
     text-align: right;
     font-style: italic;
-    padding: 10px 10px;
+    padding: 10px 8px;
     font-size: 20px;
     font-weight: bold;
     color:black;
@@ -475,6 +475,10 @@ color: rgb(0, 0, 0);
                 gap:50px;
                 justify-content: center; /* Center the list items */
                 padding: 10px 70px;
+            }
+            #contact .shapes ul li img {
+                height: 200;
+                width: 50;
             }
                 .description-container h1 {
                     text-align: center; /* Centers the title */
