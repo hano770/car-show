@@ -31,7 +31,7 @@ body {
 /*detaise code */
 .details-button-container {
     position:absolute; /* Keeps the button in a fixed position */
-    bottom: 80px; /* Distance from the bottom */
+    bottom: 50px; /* Distance from the bottom */
     right: 10px; /* Distance from the right */
     z-index: 10; /* Ensures the button is above the video */
 }
